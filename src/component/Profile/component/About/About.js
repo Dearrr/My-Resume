@@ -26,7 +26,7 @@ const About = () => {
             hands-on experience in implementing web applications using React.js.
           </Text>
           <Stack gap={2}>
-            <Stack flexDirection={{ xs: "column", md: "column" }} gap={5}>
+            <Stack flexDirection={{ xs: "column", md: "row" }} gap={{ xs: 2, md: 5 }}>
               <Box>
                 <Text color="#888" fontSize="16px">
                   Name :{" "}
@@ -40,12 +40,12 @@ const About = () => {
                 <Text fontSize="16px"> Bang Sue,Bangkok, Thailand</Text>
               </Box>
             </Stack>
-            <Stack flexDirection={{ xs: "column", md: "column" }} gap={5}>
+            <Stack flexDirection={{ xs: "column", md: "row" }} gap={{ xs: 2, md: 5 }}>
               <Box>
                 <Text color="#888" fontSize="16px">
                   Birthday :{" "}
                 </Text>
-                <Text fontSize="16px"> 18 january, 1999</Text>
+                <Text fontSize="16px"> 18 January, 1999</Text>
               </Box>
               <Box>
                 <Text color="#888" fontSize="16px">
@@ -56,11 +56,9 @@ const About = () => {
             </Stack>
           </Stack>
           <Stack>
-            <Button>
-              <a href={Resume} target="_blank">
-                Download CV
-              </a>
-            </Button>
+            <Link href={Resume} target="_blank">
+              <Button>Download CV</Button>
+            </Link>
           </Stack>
         </Stack>
       </Stack>
@@ -74,4 +72,10 @@ const Image = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 50%;
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  color: #ffff;
+  cursor: pointer;
 `;

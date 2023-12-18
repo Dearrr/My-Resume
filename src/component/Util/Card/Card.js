@@ -13,11 +13,8 @@ const CustomCard = styled.div`
   height: 100%;
   padding: 30px;
   border-radius: 20px;
-  background-color: ${(props) => (props.backGroundColor ? props.backGroundColor : "#fffff")};
+  background-color: ${(props) => (props.backgroundcolor ? props.backgroundcolor : "#fffff")};
   color: ${(props) => (props.color ? props.color : "black")};
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
   
-  /* @media (max-width: 768px){
-    width: 100%;
-  } */
 `;

@@ -18,6 +18,7 @@ const CustomButton = styled.button`
   padding: 8px 20px;
   font-size: 16px;
   font-family: "Prompt", sans-serif;
+  cursor: pointer;
 
   a {
     text-decoration: none;

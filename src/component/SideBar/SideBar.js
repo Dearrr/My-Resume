@@ -5,14 +5,13 @@ import { Stack } from "@mui/material";
 import styled from "styled-components";
 import Profile from "../../Asset/profile.jpg";
 import Text from "../Util/Text/Text";
-import Menu from "./component/Menu";
 import SocialList from "./component/SocialList";
 import PersonalProfile from "./component/PersonalProfile";
 import Language from "./component/Language";
 
 const SideBar = () => {
   return (
-    <Card backGroundColor="#4a63e7" color="#ffff">
+    <Card backgroundcolor="#4a63e7" color="#ffff">
       <Stack flexDirection={"column"} alignItems={{ xs: "center", sm: "start" }} gap={5}>
         <Stack flexDirection={"column"} alignItems={{ xs: "center", sm: "start" }}>
           <Image src={Profile} style={{ marginBottom: "10px" }} />
@@ -34,11 +33,11 @@ const SideBar = () => {
 
 export default SideBar;
 
-const FixedSideBar = styled.div`
+/* const FixedSideBar = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-`;
+`; */
 
 const Image = styled.img`
   width: 70px;
