@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Stack, ThemeProvider, createTheme } from "@mui/material";
+import "./App.css";
+import SideBar from "./component/SideBar/SideBar";
+import Profile from "./component/Profile/Profile";
 
 function App() {
+  const theme = createTheme({
+    typography: {
+      fontFamily: "Prompt', sans-serif",
+    },
+    palette: {
+      primary: { main: "#ffff" },
+    },
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Stack
+        flexDirection={{ xs: "column", sm: "row" }}
+        width={{ xs: "100%", md: "1170px" }}
+        padding={{ xs: "20px" }}
+        className="App"
+      >
+        <SideBar />
+        <Profile />
+      </Stack>
+    </ThemeProvider>
   );
 }
 
