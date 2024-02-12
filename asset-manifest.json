@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/My-Resume/static/css/main.c48c4d52.css",
-    "main.js": "/My-Resume/static/js/main.59a40545.js",
+    "main.css": "/My-Resume/static/css/main.722e912d.css",
+    "main.js": "/My-Resume/static/js/main.a2081d83.js",
     "static/js/787.9c115b09.chunk.js": "/My-Resume/static/js/787.9c115b09.chunk.js",
-    "static/media/WoraponResume.pdf": "/My-Resume/static/media/WoraponResume.8cc34a1f52e4cc27a055.pdf",
+    "static/media/cmuLogo.jpg": "/My-Resume/static/media/cmuLogo.7e52c2d41a3c1a723f8f.jpg",
+    "static/media/DaraLogo.png": "/My-Resume/static/media/DaraLogo.9d4ecd7757ea224cb694.png",
     "static/media/profile.jpg": "/My-Resume/static/media/profile.e924ebd62ce4c46a4ce2.jpg",
-    "static/media/githubIcon.svg": "/My-Resume/static/media/githubIcon.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/mlbsLogo.jpg": "/My-Resume/static/media/mlbsLogo.94b551efe88442dc2c1f.jpg",
     "index.html": "/My-Resume/index.html",
-    "static/media/linkedinIcon.svg": "/My-Resume/static/media/linkedinIcon.035256b48598c9f859c94f0c2676cd59.svg",
-    "main.c48c4d52.css.map": "/My-Resume/static/css/main.c48c4d52.css.map",
-    "main.59a40545.js.map": "/My-Resume/static/js/main.59a40545.js.map",
+    "main.722e912d.css.map": "/My-Resume/static/css/main.722e912d.css.map",
+    "main.a2081d83.js.map": "/My-Resume/static/js/main.a2081d83.js.map",
     "787.9c115b09.chunk.js.map": "/My-Resume/static/js/787.9c115b09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c48c4d52.css",
-    "static/js/main.59a40545.js"
+    "static/css/main.722e912d.css",
+    "static/js/main.a2081d83.js"
   ]
 }
