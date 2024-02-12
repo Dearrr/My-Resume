@@ -1,7 +1,4 @@
-import React from "react";
-import "./Card.css";
-import styled from "styled-components";
-
+import styled from "@emotion/styled";
 const Card = (props) => {
   return <CustomCard {...props}>{props.children}</CustomCard>;
 };
@@ -9,12 +6,28 @@ const Card = (props) => {
 export default Card;
 
 const CustomCard = styled.div`
-  width: ${(props) => (props.width ? props.width : '')};
-  height: 100%;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: ${(props) => (props.backgroundcolor ? props.backgroundcolor : "#fffff")};
-  color: ${(props) => (props.color ? props.color : "black")};
-  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
-  
+  width: 650px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px 16px;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+    gap: 8px;
+    width: 300px;
+  }
+
+  border: 0.1px solid #306ee8;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `;
